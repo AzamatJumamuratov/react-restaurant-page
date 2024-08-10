@@ -1,0 +1,26 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.avatar {
+  margin-top: 30px;
+  border-radius: 100%;
+  user-select: none;
+}
+
+.priveleges {
+  margin-top: 20px;
+}
+
+.name {
+  margin-top: 10px;
+}

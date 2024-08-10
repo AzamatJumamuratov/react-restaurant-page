@@ -1,0 +1,67 @@
+.food_gallery {
+  margin-top: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.gallery {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery > img:nth-child(1),
+.gallery > img:nth-child(6) {
+  width: calc(50% - 20px);
+}
+
+.gallery > img:nth-child(2),
+.gallery > img:nth-child(3),
+.gallery > img:nth-child(4),
+.gallery > img:nth-child(5) {
+  width: calc(25% - 20px);
+}
+
+@media screen and (max-width: 1300px) {
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallery > img:nth-child(1),
+  .gallery > img:nth-child(6) {
+    width: calc(66.6% - 15px);
+  }
+
+  .gallery > img:nth-child(2),
+  .gallery > img:nth-child(3),
+  .gallery > img:nth-child(4),
+  .gallery > img:nth-child(5) {
+    width: calc(33% - 15px);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .gallery {
+    padding: 40px;
+  }
+  .gallery > img:nth-child(1),
+  .gallery > img:nth-child(6) {
+    width: 100%;
+  }
+
+  .gallery > img:nth-child(2),
+  .gallery > img:nth-child(3),
+  .gallery > img:nth-child(4),
+  .gallery > img:nth-child(5) {
+    width: calc(50% - 15px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,19 @@
+.Header {
+  height: 800px;
+  background-image: url("../../Images/intro_bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.line {
+  width: 2px;
+  height: 51px;
+  border-radius: 2px;
+  background-color: var(--main-white);
+}
+
+.fillerDiv {
+  height: 118px;
+}

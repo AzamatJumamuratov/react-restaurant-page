@@ -1,0 +1,58 @@
+.list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  gap: 25px;
+  font-size: var(--font-size14);
+  font-weight: 700;
+  line-height: 19.07px;
+  text-align: left;
+}
+
+.burger_btn {
+  display: none;
+  background-color: transparent;
+}
+
+.burger_btn > img {
+  width: 30px;
+  height: 20px;
+}
+
+.list img {
+  filter: var(--myfilter);
+}
+
+.sidebar {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .burger_btn {
+    display: block;
+    padding: 2px;
+  }
+
+  .list {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: -35px;
+    background-color: var(--main-orange);
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .list a img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .list {
+    display: none;
+  }
+}

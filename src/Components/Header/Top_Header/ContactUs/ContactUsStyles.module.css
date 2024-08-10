@@ -1,0 +1,59 @@
+.ContactUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.ContactUs > div {
+  width: 160px;
+  font-size: var(--font-size14);
+}
+
+.number {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ContactUs img {
+  width: 23px;
+  height: 23px;
+  filter: var(--myfilter);
+}
+
+.ContactUs mark {
+  font-family: var(--font-OpenSans);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1300px) {
+  .ContactUs mark {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .ContactUs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .number {
+    margin-top: 10px;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .info_txt {
+    display: none;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}

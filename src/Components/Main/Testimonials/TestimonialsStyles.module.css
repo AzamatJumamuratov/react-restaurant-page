@@ -1,0 +1,77 @@
+.testimonials {
+  background-color: #e5e5e5;
+  color: black;
+  user-select: none;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.list {
+  width: 100%;
+  touch-action: none;
+  display: flex;
+  overflow-x: hidden;
+  height: auto;
+  position: relative;
+  /* scroll-snap-type: x mandatory; */
+}
+
+.list > li {
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+  width: 100%;
+  flex-shrink: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.controls {
+  display: flex;
+  gap: 2px;
+}
+
+.btn {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: gray;
+}
+
+.selected {
+  background-color: var(--main-white);
+  border: 1px solid var(--main-orange);
+}
+
+@media screen and (max-width: 1150px) {
+  .list > li {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .list > li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .list > li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

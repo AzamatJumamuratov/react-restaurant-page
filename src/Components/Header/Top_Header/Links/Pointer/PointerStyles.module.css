@@ -1,0 +1,40 @@
+.pointer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  z-index: 10;
+}
+
+.pointer {
+  display: block;
+  animation-name: show;
+  animation-duration: 0.75s;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes show {
+  0% {
+    bottom: -40px;
+  }
+  30% {
+    bottom: 25px;
+  }
+
+  60% {
+    bottom: 15px;
+  }
+
+  100% {
+    bottom: 20px;
+  }
+}

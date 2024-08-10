@@ -1,0 +1,21 @@
+.OurChefs {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 100px;
+}
+
+.chefs_gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+  .chefs_gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

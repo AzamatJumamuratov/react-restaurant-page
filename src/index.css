@@ -1,0 +1,58 @@
+:root {
+  --main-orange: #ff7400;
+  --secondary-orange: #d67e35;
+  --third-brown: #bc9060;
+  --main-white: #ffffff;
+  --main-black: #000;
+  --font-Tinos: "Tinos", serif;
+  --font-OpenSans: "Open Sans", sans-serif;
+  --font-Cookie: "Cookie", cursive;
+  --font-size54: 54px;
+  --font-size26: 26px;
+  --font-size14: 14px;
+}
+
+#root {
+  font-family: var(--font-Tinos);
+  color: var(--main-white);
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-orange);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: #c25700;
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

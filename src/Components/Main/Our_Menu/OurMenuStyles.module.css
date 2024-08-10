@@ -1,0 +1,52 @@
+.OurMenu {
+  height: 1000px;
+  background-image: url("../../../Images/Our_Menu/Our_Menu_Bg.png");
+  background-size: cover;
+  margin-top: 250px;
+  text-align: center;
+}
+
+.OurMenu > div {
+  padding-top: 100px;
+}
+
+.title {
+  color: var(--main-white);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dish_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 150px;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .OurMenu {
+    margin-top: 100px;
+    height: auto;
+  }
+
+  .OurMenu > div {
+    padding-bottom: 150px;
+  }
+
+  .dish_items {
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dish_items {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .dish_items > div {
+    width: 100%;
+  }
+}

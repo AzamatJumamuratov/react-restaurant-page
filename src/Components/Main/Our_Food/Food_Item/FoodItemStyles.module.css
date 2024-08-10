@@ -1,0 +1,36 @@
+.food_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.food_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+.dotted_line {
+  width: 204px;
+  height: 0px;
+  border-top: 1px dashed black;
+}
+
+@media screen and (max-width: 768px) {
+  .food_item {
+    justify-content: center;
+  }
+  .food_desc {
+    gap: 7px;
+    font-size: 18px;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  .dotted_line {
+    display: none;
+  }
+}
